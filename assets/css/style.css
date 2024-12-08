@@ -289,7 +289,6 @@ header.fixed {
 .popular {
   padding: 65px 0;
   margin-top: 135px;
-  background-color: #ccc;
 }
 
 .popular-top {
@@ -417,9 +416,16 @@ header.fixed {
   background: #2e2100;
 }
 
-.feedback .feedback-item {
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -479,4 +485,52 @@ header.fixed {
   line-height: 1.54;
   font-style: italic;
   color: #fff;
+}
+
+/* Features */
+.features {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  display: flex;
+  gap: 0 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features img.lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+
+.features .content .cta-btn {
+  margin-top: 32px;
+  min-width: 137px;
+  background: var(--primary-color);
 }
